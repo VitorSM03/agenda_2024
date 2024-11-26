@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #182acf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calendar {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.month h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #555;
+}
+
+button:hover {
+    color: #000;
+}
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.weekdays div {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.days div {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.days div:hover {
+    background: #eee;
+}
+
+.days .prev-month, .days .next-month {
+    color: #aaa;
+}
+
+.days div.active {
+    background: #007BFF;
+    color: #fff;
+}
+
+.all_year {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    max-width: 800px;   
+}
+
+.all_year .all_months a{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #000000; 
+    margin-top: 20px; 
+    text-decoration: none;
+}
+
+
+.all_months{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 250px;
+    background-color: #148D8D;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.menu-botton {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #148D8D; 
+    margin-top: 20px; 
+}
+
+.menu-botton a {
+    color: inherit;
+    text-decoration: none; 
+    font-weight: bold; 
+}
