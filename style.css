@@ -5,7 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .calendar {
